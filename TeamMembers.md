@@ -2,21 +2,21 @@
 
 Team number: 
 
-Member 1 (Team leader):
-Student ID:
-Email:
+Member 1 (Team leader): Rouxiao Hu
+Student ID: 13409990
+Email: 13409990@student.uts.edu.au
 
 
-Member 2:
-Student ID:
-Email:
+Member 2: Shuyan Cao
+Student ID: 13338746
+Email: 13338746@student.uts.edu.au
 
-Member 3:
-Student ID:
-Email:
+Member 3: Tianxiang Lan
+Student ID: 12831867
+Email: 12831867@student.uts.edu.au
 
 
-Member 4:
-Student ID:
-Email:
+Member 4: Yayu Luo
+Student ID: 13717626
+Email: 13717626@student.uts.edu.au
 
