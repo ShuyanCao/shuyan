@@ -2,7 +2,7 @@
 
 Team number: 
 
-Member 1 (Team leader): Rouxiao Hu
+Member 1 (Team leader): Ruoxiao Hu
 Student ID: 13409990
 Email: 13409990@student.uts.edu.au
 
