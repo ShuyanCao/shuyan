@@ -15,6 +15,7 @@
 		88A5D295248F6CEA001713F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A5D293248F6CEA001713F7 /* LaunchScreen.storyboard */; };
 		88A5D2A0248F6CEA001713F7 /* assignment3_teamHotpotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A5D29F248F6CEA001713F7 /* assignment3_teamHotpotTests.swift */; };
 		88A5D2AB248F6CEB001713F7 /* assignment3_teamHotpotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A5D2AA248F6CEB001713F7 /* assignment3_teamHotpotUITests.swift */; };
+		88A5D335248FB306001713F7 /* weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A5D334248FB306001713F7 /* weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		88A5D2A6248F6CEB001713F7 /* assignment3-teamHotpotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "assignment3-teamHotpotUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A5D2AA248F6CEB001713F7 /* assignment3_teamHotpotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assignment3_teamHotpotUITests.swift; sourceTree = "<group>"; };
 		88A5D2AC248F6CEB001713F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88A5D334248FB306001713F7 /* weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				88A5D291248F6CEA001713F7 /* Assets.xcassets */,
 				88A5D293248F6CEA001713F7 /* LaunchScreen.storyboard */,
 				88A5D296248F6CEA001713F7 /* Info.plist */,
+				88A5D334248FB306001713F7 /* weather.swift */,
 			);
 			path = "assignment3-teamHotpot";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88A5D335248FB306001713F7 /* weather.swift in Sources */,
 				88A5D28D248F6CE6001713F7 /* ViewController.swift in Sources */,
 				88A5D289248F6CE6001713F7 /* AppDelegate.swift in Sources */,
 				88A5D28B248F6CE6001713F7 /* SceneDelegate.swift in Sources */,
@@ -434,7 +438,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "assignment3-teamHotpot/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -442,6 +448,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "IOS.assignment3-teamHotpot";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,7 +458,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "assignment3-teamHotpot/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,6 +468,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "IOS.assignment3-teamHotpot";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -8,13 +8,41 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
+
+    @IBOutlet weak var searchTextfield: UITextField!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        searchTextfield.delegate = self
     }
 
 
+    @IBAction func searchButton(_ sender: UIButton) {
+        searchTextfield.endEditing(true)
+        print(searchTextfield.text!)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        searchTextfield.endEditing(true)
+        print(searchTextfield.text!)
+        return true
+    }
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        if textField.text != "" {
+            return true
+        } else {
+            textField.placeholder = "city"
+            return false
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        searchTextfield.text = ""
+    }
 }
 
