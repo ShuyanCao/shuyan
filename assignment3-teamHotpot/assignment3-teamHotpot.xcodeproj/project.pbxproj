@@ -17,6 +17,7 @@
 		88A5D2AB248F6CEB001713F7 /* assignment3_teamHotpotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A5D2AA248F6CEB001713F7 /* assignment3_teamHotpotUITests.swift */; };
 		88A5D335248FB306001713F7 /* weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A5D334248FB306001713F7 /* weather.swift */; };
 		88A5D3372490EBCC001713F7 /* weatherDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A5D3362490EBCC001713F7 /* weatherDatabase.swift */; };
+		88A5D33924910986001713F7 /* weatherMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A5D33824910986001713F7 /* weatherMode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		88A5D2AC248F6CEB001713F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88A5D334248FB306001713F7 /* weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather.swift; sourceTree = "<group>"; };
 		88A5D3362490EBCC001713F7 /* weatherDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherDatabase.swift; sourceTree = "<group>"; };
+		88A5D33824910986001713F7 /* weatherMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				88A5D296248F6CEA001713F7 /* Info.plist */,
 				88A5D334248FB306001713F7 /* weather.swift */,
 				88A5D3362490EBCC001713F7 /* weatherDatabase.swift */,
+				88A5D33824910986001713F7 /* weatherMode.swift */,
 			);
 			path = "assignment3-teamHotpot";
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88A5D335248FB306001713F7 /* weather.swift in Sources */,
+				88A5D33924910986001713F7 /* weatherMode.swift in Sources */,
 				88A5D28D248F6CE6001713F7 /* ViewController.swift in Sources */,
 				88A5D3372490EBCC001713F7 /* weatherDatabase.swift in Sources */,
 				88A5D289248F6CE6001713F7 /* AppDelegate.swift in Sources */,

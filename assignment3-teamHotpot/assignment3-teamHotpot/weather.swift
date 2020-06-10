@@ -8,18 +8,23 @@
 
 import Foundation
 
-struct weather {
+protocol WeatherControlDelegate {
+    func didUpdateWeather(_ weatherControler: WeatherControl, weather: weatherMode)
+    func didFailWithError(_ erro:Error)
+}
+
+struct WeatherControl {
     //secure load url resource with https
     let weatherURL =
     "https://api.openweathermap.org/data/2.5/weather?appid=95eb8f160c62491fde03591925a3fbc9&units=metric"
-
+    var delegate: WeatherControlDelegate?
 
 func fetchWeather(cityName: String) {
     let urlString = "\(weatherURL)&q=\(cityName)"
-    self.performanceRequest(urlString: urlString)
+    self.performanceRequest(with: urlString)
 }
     
-    func performanceRequest(urlString: String){
+    func performanceRequest(with urlString: String){
         //create url
         if let url = URL(string: urlString) {
         //create a URL session
@@ -27,12 +32,14 @@ func fetchWeather(cityName: String) {
         // give the session a task
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil{
-                       print(error!)
+                    self.delegate?.didFailWithError(error!)
                        //if error the process would not continue
                        return
                    }
-                 if let safeData = data {
-                    self.parseJSON(weatherData: safeData)
+                if let safeData = data {
+                    if let weather = self.parseJSON(safeData) {
+                        self.delegate?.didUpdateWeather(self, weather: weather)
+                    }
             }
             }
         //start task, initialized tasks begin in a suspended state
@@ -40,17 +47,22 @@ func fetchWeather(cityName: String) {
     }
     }
   
-    func parseJSON(weatherData: Data) {
+    func parseJSON(_ weatherDatabase: Data) -> weatherMode? {
         let decoder = JSONDecoder()
         do{
-        let decodedData = try decoder.decode(weatherDatabase.self, from: weatherData)
-            let id = decodedData.weather[0].id
+            let decodedData = try decoder.decode(WeatherDatabase.self, from: weatherDatabase)
+        let id = decodedData.weather[0].id
+        let temp = decodedData.main.temp
+        let name = decodedData.name
+            
+        let weather = weatherMode(conditionId: id, cityName: name, temperature: temp)
+        return weather
+            
         } catch {
-            print(error)
+            delegate?.didFailWithError(error)
+            return nil
         }
         
         }
-    func getConditionName(weatherId: Int) -> String {
-        
-    }
+   
     }
