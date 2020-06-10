@@ -16,6 +16,7 @@
 		88A5D2A0248F6CEA001713F7 /* assignment3_teamHotpotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A5D29F248F6CEA001713F7 /* assignment3_teamHotpotTests.swift */; };
 		88A5D2AB248F6CEB001713F7 /* assignment3_teamHotpotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A5D2AA248F6CEB001713F7 /* assignment3_teamHotpotUITests.swift */; };
 		88A5D335248FB306001713F7 /* weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A5D334248FB306001713F7 /* weather.swift */; };
+		F2504A9D2490CD1D00B0ABC5 /* ReplyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2504A9C2490CD1D00B0ABC5 /* ReplyController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		88A5D2AA248F6CEB001713F7 /* assignment3_teamHotpotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assignment3_teamHotpotUITests.swift; sourceTree = "<group>"; };
 		88A5D2AC248F6CEB001713F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88A5D334248FB306001713F7 /* weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather.swift; sourceTree = "<group>"; };
+		F2504A9C2490CD1D00B0ABC5 /* ReplyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				88A5D288248F6CE6001713F7 /* AppDelegate.swift */,
+				F2504A9C2490CD1D00B0ABC5 /* ReplyController.swift */,
 				88A5D28A248F6CE6001713F7 /* SceneDelegate.swift */,
 				88A5D28C248F6CE6001713F7 /* ViewController.swift */,
 				88A5D28E248F6CE6001713F7 /* Main.storyboard */,
@@ -265,6 +268,7 @@
 				88A5D335248FB306001713F7 /* weather.swift in Sources */,
 				88A5D28D248F6CE6001713F7 /* ViewController.swift in Sources */,
 				88A5D289248F6CE6001713F7 /* AppDelegate.swift in Sources */,
+				F2504A9D2490CD1D00B0ABC5 /* ReplyController.swift in Sources */,
 				88A5D28B248F6CE6001713F7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
