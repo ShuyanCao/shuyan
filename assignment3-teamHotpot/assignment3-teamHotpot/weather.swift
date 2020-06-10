@@ -44,10 +44,13 @@ func fetchWeather(cityName: String) {
         let decoder = JSONDecoder()
         do{
         let decodedData = try decoder.decode(weatherDatabase.self, from: weatherData)
-            print(decodedData.weather[0].id)
+            let id = decodedData.weather[0].id
         } catch {
             print(error)
         }
         
         }
+    func getConditionName(weatherId: Int) -> String {
+        
+    }
     }
