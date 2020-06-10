@@ -1,3 +1,6 @@
+Team Project:
+Weather APP. An application for browsing weather changes around the world, providing information to travelers.
+
 # write your team members information below.
 
 Team number: 
