@@ -36,6 +36,6 @@ struct weatherMode {
         default:
             return "sun.max"
         }
-    }
+    } 
     
 }
