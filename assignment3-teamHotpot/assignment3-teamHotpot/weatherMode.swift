@@ -14,9 +14,10 @@ struct weatherMode {
     let temperature: Double
     
     var temperatureString: String {
+        //return double right format
         return String(format: "%.1f", temperature)
     }
-    
+    //condition name to change image in symble by catching id from database
     var conditionString: String {
         switch conditionId {
         case 200...232:

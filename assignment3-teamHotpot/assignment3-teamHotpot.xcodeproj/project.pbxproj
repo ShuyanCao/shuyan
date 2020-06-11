@@ -107,11 +107,11 @@
 			children = (
 				88A5D288248F6CE6001713F7 /* AppDelegate.swift */,
 				88A5D28A248F6CE6001713F7 /* SceneDelegate.swift */,
-				88A5D28C248F6CE6001713F7 /* ViewController.swift */,
 				88A5D28E248F6CE6001713F7 /* Main.storyboard */,
 				88A5D291248F6CEA001713F7 /* Assets.xcassets */,
 				88A5D293248F6CEA001713F7 /* LaunchScreen.storyboard */,
 				88A5D296248F6CEA001713F7 /* Info.plist */,
+				88A5D28C248F6CE6001713F7 /* ViewController.swift */,
 				88A5D334248FB306001713F7 /* weather.swift */,
 				88A5D3362490EBCC001713F7 /* weatherDatabase.swift */,
 				88A5D33824910986001713F7 /* weatherMode.swift */,
